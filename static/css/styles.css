@@ -1,0 +1,71 @@
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Прозрачность навигационной панели */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+/* Стили для вертикальных блоков */
+.block {
+    width: 100%;
+    height: 100vh; /* Высота блока будет равна высоте видимой области браузера */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Позиционирование для дочерних элементов */
+}
+
+.block-1 {
+    background-image: url('../img/back_baner.jpg'); /* Путь к первой картинке */
+}
+.block-2 {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    padding: 20px;
+}
+
+.block-2 .container {
+    flex: 1;
+}
+.block-3 {
+    background-image: url('../img/call-action-bg.jpg'); /* Путь ко второй картинке */
+}
+
+/* Подконтейнеры для контента внутри блоков */
+.block-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Цвет текста для контраста с фоном */
+    z-index: 1; /* Поверх других элементов */
+}
+
+.card-deck {
+    background: rgba(0, 0, 0, 0.7); /* Прозрачный фон для видимости текста */
+    padding: 20px;
+    border-radius: 15px;
+}
+.single-service {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
