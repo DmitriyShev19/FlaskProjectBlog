@@ -1,7 +1,14 @@
 from flask import Flask, render_template
+from flask_login import LoginManager
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+
 app.config['SECRET_KEY'] = 'jsdfhjsdhkjfk4212hsdfhlkjs'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+db = SQLAlchemy(app)
+
+manager = LoginManager(app)
 
 
 @app.route('/')
@@ -12,6 +19,7 @@ def index():
 @app.route('/where_to_begin')
 def where_to_begin():
     return render_template('where_to_begin.html', title='С чего начать?')
+
 
 @app.route('/folk')
 def folk():
