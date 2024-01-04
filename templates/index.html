@@ -5,33 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask Bootstrap Template</title>
     <!-- Подключение Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
-
+<div class="container">
     <!-- Навигационная панель -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Главная страница</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">С чего начать?<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Как слушать фольклор<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">О русской культуре через песню<span class="sr-only">(current)</span></a>
-                </li>
-                <!-- Добавьте другие пункты меню здесь -->
-            </ul>
-        </div>
-    </nav>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#"><h4>Гулюшки</h4></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><h6>С чего начать</h6></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><h6>Как слушать фольклор?</h6></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><h6>О русской культуре через песню</h6></a>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><h6>Вход</h6></a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><h6>Регистрация</h6></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
     <div class="container-fluid p-0">
 
         <!-- Вертикальные блоки -->
@@ -43,6 +54,7 @@
                     <div class="block-content text-center">
                         <!-- Ваш контент для первого блока -->
                         <h1>Екатерина Ряжских</h1>
+                        <h2>РУССКАЯ ДУША</h2>
                     </div>
                 </div>
             </div>
@@ -52,47 +64,40 @@
                 <div class="block block-2">
                     <div class="container">
                          <div class="row">
-                              <div class="col-md-4  mt-4 mb-4">
-                                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <h2 class="fw-normal">Heading</h2>
-                                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                              <div class="col-lg-4  mt-4 mb-4">
+                                <h4 class="fw-normal">ОБО МНЕ</h4>
+                                <p>Здравствуйте! Меня зовут Катя. Я педагог, музыкант, блогер и мама двоих дочек.</p>
+                                <p><a class="btn btn-secondary" href="#">Подробнее »</a></p>
                               </div>
-                              <div class="col-md-4  mt-4 mb-4">
-                                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <h2 class="fw-normal">Heading</h2>
-                                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-                                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                              <div class="col-lg-4  mt-4 mb-4">
+                                <h3 class="fw-normal">ГУЛЮШКИ</h3>
+                                <p>Занятия, которые мы создали вместе с моей дочкой Дуней. Распевки, пальчиковые игры, колыбельные, заклички, потешки, сказки.</p>
+                                <p><a class="btn btn-secondary" href="#">Подробнее »</a></p>
                               </div>
-                              <div class="col-md-4  mt-4 mb-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>And lastly this, the third column of representative placeholder content.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
-          </div>
-                              <div class="col-md-4  mt-4 mb-4">
-                                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <h2 class="fw-normal">Heading</h2>
-                                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                             <div class="col-lg-4  mt-4 mb-4">
+                                <h2 class="fw-normal">КУКЛЫ В РУССКОМ</h2>
+                                <p>Бумажные куклы для вырезания в традиционной русской одежде, с подробным описанием в виде путешествия и музыкальной подборкой.</p>
+                                <p><a class="btn btn-secondary" href="#">Подробнее »</a></p>
                               </div>
-                              <div class="col-md-4  mt-4 mb-4">
-                                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                                <h2 class="fw-normal">Heading</h2>
-                                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-                                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                             <div class="col-lg-4  mt-4 mb-4">
+                                <h2 class="fw-normal">ПЛАТОЧКИ</h2>
+                                <p>Они родились ещё осенью, но только в преддверии весны у нас получилось их напечатать и показать вам!</p>
+                                <p><a class="btn btn-secondary" href="#">Подробнее »</a></p>
                               </div>
-                              <div class="col-md-4  mt-4 mb-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>And lastly this, the third column of representative placeholder content.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
-          </div>
+                             <div class="col-lg-4  mt-4 mb-4">
+                                <h2 class="fw-normal">МОНОСПЕКТАКЛЬ</h2>
+                                <p>В основе моноспектакля истории, записанные в моем родном Тербунском районе.</p>
+                                <p><a class="btn btn-secondary" href="#">Подробнее »</a></p>
+                              </div>
+                             <div class="col-lg-4  mt-4 mb-4">
+                                <h2 class="fw-normal">ВСТРЕЧИ В ZOOM</h2>
+                                <p>Не знаете с чего начать? Начинайте с наших посиделок.</p>
+                                <p><a class="btn btn-secondary" href="#">Подробнее »</a></p>
+                              </div>
                          </div>
                     </div>
                 </div>
             </div>
-
             <!-- Третий блок с картинкой -->
             <div class="col-md-12">
                 <div class="block block-3">
@@ -107,13 +112,12 @@
     </div>
 
     <!-- Закрепленный footer -->
-    <div class="footer">
+    <div class="container">
         <p>&copy; 2024 Мой сайт. Все права защищены.</p>
     </div>
 
     <!-- Подключение Bootstrap JS, Popper.js и jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
