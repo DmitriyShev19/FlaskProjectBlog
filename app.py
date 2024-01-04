@@ -5,7 +5,7 @@ app.config['SECRET_KEY'] = 'jsdfhjsdhkjfk4212hsdfhlkjs'
 
 
 @app.route('/')
-def index():  # put application's code here
+def index():
     return render_template('index.html', title='Домашняя страница')
 
 
