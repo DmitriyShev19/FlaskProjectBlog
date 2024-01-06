@@ -14,7 +14,7 @@ class BaseModel:
         new_user.save()
 
 
-class Users(db.Model, BaseModel, UserMixin):
+class User(db.Model, BaseModel, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     login = db.Column(db.String(64), unique=True)
     email = db.Column(db.String(100), unique=True)
